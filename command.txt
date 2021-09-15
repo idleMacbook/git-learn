@@ -1,0 +1,28 @@
+git config --global init.defaultBranch main 
+    -> 기본 브런치 이름을 master에서 main으로 변경
+git config --global user.name "USERNAME"
+git config --global user.email "EMAIL"
+    -> 사용 할 유저이름과 이메일 설정
+git config --list 
+    -> 설정 값 확인
+
+
+git init
+    -> 사진사 고용(최초 한번). 프로젝트 시작
+
+** 반복 **
+    git add 경로
+        -> 사진 찍을 사람 추가 (커밋 할 파일)
+    git status
+        -> 사진 찍을 사람이 잘 모였는지 상태 확인 (커밋 할 파일 add 되었는지 확인)
+    git commit
+    git commit -m "MESSAGE"
+        -> 사진 찍기
+    git log
+        -> 사진이 잘 찍혔는지 확인 (커밋 확인)
+** 반복 **
+
+git reset
+git reset --hard HASH_VALUE
+    -> 이전 상태로 돌아가기 (해쉬 값은 git log로 확인)
+
