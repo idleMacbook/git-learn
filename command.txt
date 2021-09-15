@@ -9,6 +9,11 @@ git config --list
 
 git init
     -> 사진사 고용(최초 한번). 프로젝트 시작
+git remote add origin GITHUB_ADDRESS
+    -> 깃허브 연동
+git push origin main
+git push -u origin main
+    -> 깃허브에 커밋 적용하기
 
 ** 반복 **
     git add 경로
@@ -23,6 +28,8 @@ git init
 ** 반복 **
 
 git reset
+git reset --hard
+    -> 마지막 커밋 상태로 돌아가기
 git reset --hard HASH_VALUE
-    -> 이전 상태로 돌아가기 (해쉬 값은 git log로 확인)
+    -> 이전 해쉬 값의 커밋 상태로 돌아가기 (해쉬 값은 git log로 확인)
 
